@@ -639,3 +639,10 @@ Para que houvesse destruição do Objeto, apenas fizemos uma série de "if" que 
 }
 
 ```
+
+
+Usando um script do próprio Unity, obtivemos o movimento e também uma mira para o jogador saber onde está acertando.
+
+O Script é separado em uma série de Classes, sendo elas:
+
+
