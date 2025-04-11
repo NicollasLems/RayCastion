@@ -1,5 +1,15 @@
 # RAYCASTION
 
+Nesse projeto abordamos o "Physics.Raycast" e seus funcionamentos a partir da emulação de treino de mira (AimLab)
+
+- O que é o Physics.RayCast?
+
+O RayCast é um elemento de física dentro do motor gráfico da unity responsável por criar um raio com colisão, esse raio em princípio é invisível e não possui função alguma além de ser lançado, no entanto, de acordo a como for programado, o raio pode colidir objetos e destrui-los,  criar novos objetos ou simplesmente enviar uma mensagem de resposta de colisão. Também é importante mencionar de que é possível "desenhar" o raio para que ele seja visível para o programador ou usuário do programa ao qual foi inserido 
+
+- Como abordamos?
+
+Pegando o serviço de treino de mira conhecido como AimLab, fizermos uma simulação um pouco mais básica de como é o seu funcionamento, adicionamos um prefab de movimentação, um de alvos a serem acertados pelo jogador. Com isso em mente configuramos a área de spawn destes alvos para que após eles serem destruídos pelo raio lançado pelo jogador, eles reapareçam em cordenadas diferentes de acordo com o limite imposto para que os alvos fiquem sempre visíveis para o player.
+
 ## DRIVE DO VIDEO
 
 https://drive.google.com/file/d/1IyXH9gnzdSso4eKswWMx2XKaY6peBvUf/view?usp=drive_link
