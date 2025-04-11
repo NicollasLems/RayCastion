@@ -1,6 +1,10 @@
 # RAYCASTION
 >[!Important]
-> Dupla: Daniel Carvalho Da Silva & Nicollas Lemes.
+> Dupla:
+>
+> Daniel Carvalho Da Silva
+>
+> Nicollas Lemes.
 >
 > Turma: Terceiro Jogos.
 >
