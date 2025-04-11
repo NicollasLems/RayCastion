@@ -104,7 +104,24 @@ public class RayCastion : MonoBehaviour
 
 ```
 
+RayCastion:
+
+Utilizamos de uma programação simples que cria o raio (ray) após o clique do mouse. Com isso, no início para identificar caso acertamos, criamos a classe "Mandar", essa identificando se o raio acertou e guardando o seu dado, sendo essas identificações:
+
+- Ponto de acerto.
+- Distância.
+- olisão com tag.
+- Colisão com GameObject.
+
+Indo adiante, criamos uma classe "SpawnNextSphere" junto de um simples script para a criação do nosso objeto (Sphere). Adicionamos uma classe publica de GameObject, utilizando os vetores 3D e também o comando "Random.Range, criamos uma área na qual o objeto pode spawnar. logo após instâncias sua posição e usamos o Quaternion para arrumar sua rotação.
+
+Para que houvesse destruição do Objeto, apenas fizemos uma série de "if" que identifica sua tag, botão do mouse e puxa a classe "SpawNextSphere" para destruir o GameObject e criar outro em seguida.
+
+
+
+
 ```csharp
+
 ### Movimento & Crosshair
 
 **public class FirstPersonController : MonoBehaviour
