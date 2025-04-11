@@ -4,10 +4,6 @@
 
 
 
-![Captura de tela 2025-04-10 232212](https://github.com/user-attachments/assets/09fd6b00-402f-437a-987d-6afbb50bcf1a)
-
-
-
 
 ```csharp
 
