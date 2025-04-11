@@ -9,6 +9,7 @@ https://drive.google.com/file/d/1IyXH9gnzdSso4eKswWMx2XKaY6peBvUf/view?usp=drive
 https://drive.google.com/file/d/1q9BRfHDpC1jtFVdEZmCSTSUUzFSGL3xw/view?usp=drive_link
 
 
+# Explicação Do Jogo
 
 ![image](https://github.com/user-attachments/assets/7c3c5c13-9383-4766-9ed7-b8fc1f831c03)
 
