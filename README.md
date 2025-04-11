@@ -1,4 +1,8 @@
 # RAYCASTION
+>[!Important]
+> Dupla: Daniel Carvalho Da Silva & Nicollas Lemes.
+> Turma: Terceiro Jogos.
+>
 
 Nesse projeto abordamos o "Physics.Raycast" e seus funcionamentos a partir da emulação de treino de mira (AimLab)
 
@@ -9,6 +13,11 @@ O RayCast é um elemento de física dentro do motor gráfico da unity responsáv
 - Como abordamos?
 
 Pegando o serviço de treino de mira conhecido como AimLab, fizermos uma simulação um pouco mais básica de como é o seu funcionamento, adicionamos um prefab de movimentação, um de alvos a serem acertados pelo jogador. Com isso em mente configuramos a área de spawn destes alvos para que após eles serem destruídos pelo raio lançado pelo jogador, eles reapareçam em cordenadas diferentes de acordo com o limite imposto para que os alvos fiquem sempre visíveis para o player.
+
+- O que cada um fez?
+
+Fomos equilibrados, Nicollas se manteve atento, auxiliando na programação e também na utilização de ideias para a nossa simulação. Daniel foi quem fez a parte dos scripts, Nicollas pegou os assets e auxiliou na criação dos scripts. 
+Ambos trabalharam, sendo o GitHub organizado por ambos enquanto em sala, o que explica a quantidade de commits, enquanto outros foram arrumados em casa.
 
 ## DRIVE DO VIDEO
 
