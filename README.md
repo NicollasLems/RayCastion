@@ -4,7 +4,7 @@
 >
 > Turma: Terceiro Jogos.
 >
->Nesse projeto abordamos o "Physics.Raycast" e seus funcionamentos a partir da emulação de treino de mira (AimLab)
+>**Nesse projeto abordamos o "Physics.Raycast" e seus funcionamentos a partir da emulação de treino de mira (AimLab)**
 
 - O que é o Physics.RayCast?
 
