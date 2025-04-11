@@ -645,4 +645,16 @@ Usando um script do próprio Unity, obtivemos o movimento e também uma mira par
 
 O Script é separado em uma série de Classes, sendo elas:
 
+- Camera: que utiliza do “FOV” (Field of view), Crosshair (Mira), e diminuição de FOV quando o personagem está correndo, para dar sensação de movimento acelerado.
+
+- Movement: Todos os fatores de movimentação, com movimentos básicos dos eixos, junto de Pulo, agachamento, corrida e barra de cansaço.
+
+Primeiramente o script pega variáveis para o fov, scale e posição das juntas, e detecta caso o Sprint esteja cheio.
+Iniciando, usamos um comando de lockCursor para o mouse ser preso na tela, adicionando a nossa crosshair com um gameObject de sprite. Configuramos a barra de cansaço, colocando variáveis para o seu tamanho na tela e seu funcionamento conforme o player corre. Aproveitamos para partir em direção à configuração da câmera, criamos uma variável que permite um Zoom caso o player aperte o botão direito do mouse ou que ele esteja correndo. Utilizando Mathf.Lerp para interpolar as variáveis, caso o player esteja correndo e o isZoomed = false, a câmera vai se aproximar sem a necessidade do botão direito, que volta caso a barra de corrida acabe ou o player decida parar de correr. Melhorando as possibilidades de movimento, criamos a possibilidade do pulo e do agachamento, criamos mais uma variável que verifica se o player está pisando em algo e também o quanto de velocidade ele tem, impedindo que a velocidade aumente caso aperte os botões para andar verticalmente. Para a possibilidade da corrida, iremos usar o método Mathf.Clamp que adiciona uma força necessária até que o player esteja correndo em sua velocidade máxima, além de verificar a sua velocidade enquanto está agachado, correndo ou parado, isso, utilizando o rb.AddForce para identificar a força usada para essa mudança de velocidade.
+A classe CheckGround utiliza um raycast para baixo, este identificando o objeto que está abaixo do player e envia uma mensagem dizendo se o player está ou não pisando no chão, que ativa o script para o player ficar 0.75f acima desse objeto, dando a impressão de estar pisando. 
+As classes Jump e Crounch são para o pulo do personagem e sua agachada, sendo usados somente enquanto o player pula e usam o rigidybody do player para aplicar força no pula, adicionando o termo AddForce, o que também possibilita identificar as mudanças na velocidade do player em ambas possibilidades. 
+Obs: Caso o player esteja agachado, se o player pular, ele primeiro se levanta e depois pula, isso com o método if(isCrounched && !holdToCrouch).
+
+Finalizamos com a classe HeadBob, que calcula a mudança da câmera em seu movimento, permitindo criar uma sensação de balançar na cabeça, para isso usando as juntas, que permitem o movimento da câmera se tornar mais suave.
+
 
